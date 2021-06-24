@@ -7,7 +7,7 @@ if(count($arr) == 0){echo 'given array is empty'; return; }
 //variable to hold summed values
 $sum = 0;
 
-//iterate through the array and sum the values
+//iterate through the array and sum values
 for($i = 0; $i < count($arr); $i++){
     $sum = $sum + $arr[$i];
 }
