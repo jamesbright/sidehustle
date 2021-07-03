@@ -9,7 +9,7 @@ $range_values = array();
 
 //push values from the given array into the new array using the start and end range
 for($start; $start <= $end; $start++){
-    array_push($range_values, $arr[$start]);
+    $range_values[$start] = $arr[$start];
 }
 
 //return the selected values
