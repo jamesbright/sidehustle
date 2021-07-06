@@ -78,7 +78,7 @@ table tr[disabled] td::after {
 </div>
 <table>
 <tr>
-<th>Task</th>
+<th>Todo</th>
 <th>Description</th>
 <th>Created</th>
 <th>Updated</th>
