@@ -108,7 +108,7 @@ table tr[disabled] td::after {
 <th>Actions</th>
 </tr>
 <?php while($row = mysqli_fetch_array($tasks)): ?>
-<tr <?php if($row['done'] == 1): echo "class= 'done'"." disabled"; else: if(checkExpiry($row['id']) == 1): echo "class= 'bg-red' "." disabled"; endif; endif; ?> >
+<tr <?php if($row['done'] == 1): echo "class= 'done'"." disabled"; else: if(checkExpiry($row['id']) == 1): echo "class= 'bg-red' "; endif; endif; ?> >
 
 <td><?php echo $row['title']; ?> </td>
 <td><?php echo $row['description']; ?> </td>
