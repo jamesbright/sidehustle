@@ -32,9 +32,31 @@ color:white;
 background:green;
 color:white;
 }
+
+.bg-blue{
+background:blue;
+color:white;
+}
+
+a{
+  text-decoration:none;
+}
+.curved{
+  padding:3px;
+  border-radius:5px;
+}
 .white{
   color:white;
 
+}
+.red{
+  color:red;
+}
+.blue{
+  color:blue;
+}
+.green{
+  color:green;
 }
 .done{
     text-decoration:line-through;
@@ -74,7 +96,7 @@ table tr[disabled] td::after {
 </head>
 <body>
 <div class="text-right"> 
-<button class="bg-green"><a class="white" href="index.php?new_task">Create New</a> </button>
+<button class="bg-green curved"><a class="white" href="index.php?new_task">Create New</a> </button>
 </div>
 <table>
 <tr>
@@ -94,9 +116,9 @@ table tr[disabled] td::after {
 <td><?php echo $row['updated']; ?> </td>
 <td><?php echo $row['deadline']; ?> </td>
 <td> 
-<a href="index.php?edit=<?php echo $row['id']; ?>">Edit</a>
-<a href="index.php?delete=<?php echo $row['id']; ?>">Delete</a>
-<a href="index.php?mark_done=<?php echo $row['id']; ?>">Mark done</a>
+<a class="bg-blue curved" href="index.php?edit=<?php echo $row['id']; ?>">Edit</a>
+<a class="bg-red curved" href="index.php?delete=<?php echo $row['id']; ?>">Delete</a>
+<a class="bg-green curved" href="index.php?mark_done=<?php echo $row['id']; ?>">Mark done</a>
 </td>
 </tr>
 <?php endwhile; ?>
