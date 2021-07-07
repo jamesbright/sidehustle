@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Tasks</title>
+    <title> Todo</title>
 
 
         <style>
